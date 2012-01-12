@@ -1,0 +1,15 @@
+{
+  "content_scripts": [ {
+						 "all_frames": true,
+						 "matches": [ "http://*/*", "https://*/*" ],
+						 "js": [ "text-columns.js" ]
+					   } ],
+  "description": "Reformats selected text to use columns of a more readable width.",
+  "name": "Text into Multiple Columns",
+  "version": "0.9.1",
+  "background_page": "background.html",
+  "browser_action": {
+	"default_icon": "cols.png",
+	"default_title": "Display selected text in multiple columns."
+  }
+}

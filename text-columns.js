@@ -8,6 +8,7 @@ split_text = function() {
 	if (node) {
 		node.style.setProperty("-webkit-column-count", "2");
 	}
+	window.getSelection().collapseToStart();
 }
 
 

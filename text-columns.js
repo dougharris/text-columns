@@ -1,4 +1,5 @@
-split_text = function() {
+
+var split_text = function() {
 	var r = window.getSelection().getRangeAt();
 	var node = r.commonAncestorContainer;
 
@@ -19,6 +20,3 @@ chrome.extension.onRequest.addListener(
 		}
 		sendResponse({}); 
 	}); 
-
-
-

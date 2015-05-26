@@ -1,6 +1,6 @@
 
 var split_text = function() {
-	var r = window.getSelection().getRangeAt();
+	var r = window.getSelection().getRangeAt(0);
 	var node = r.commonAncestorContainer;
 
 	while (! node.style && node.parentElement) {

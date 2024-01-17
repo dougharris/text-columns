@@ -15,11 +15,10 @@ var split_text = function() {
   }
 }
 
-
 chrome.extension.onRequest.addListener(
   function(request, sender, sendResponse) {
 	if (request.action == "split") {
 	  split_text();
 	}
 	sendResponse({}); 
-  }); 
+}); 
